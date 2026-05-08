@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        if(true){
+            var leaked ="I escaped!";
+        }
+console.log(leaked); 
+//let stays inside the block 
+if(true){
+    let safe="i am block scoped "
+    console.log(safe);
+}
+let safe="i am outside the block";
+console.log(safe);
+
+    const PI=3.14;
+    console.log(PI);
+    PI=4;
+
+      
+    </script>
+</body>
+</html>

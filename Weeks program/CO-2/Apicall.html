@@ -1,0 +1,43 @@
+APICALL
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+
+    <script>
+const settings = {
+	async: true,
+	crossDomain: true,
+	url: 'https://open-weather13.p.rapidapi.com/city?city=Hyderabad&lang=EN',
+	method: 'GET',
+	headers: {
+		'x-rapidapi-key': '4bbfcf786emshfc3142206e74425p1fb061jsn935098469c02',
+		'x-rapidapi-host': 'open-weather13.p.rapidapi.com',
+		'Content-Type': 'application/json'
+	}
+};
+
+$.ajax(settings).done(function (response) {
+	console.log(response);
+});
+
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>
