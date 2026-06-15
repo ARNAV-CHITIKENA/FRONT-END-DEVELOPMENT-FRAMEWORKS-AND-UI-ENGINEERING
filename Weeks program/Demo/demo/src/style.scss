@@ -1,0 +1,23 @@
+.button {
+  background: transparent;
+  transition: all 0.1s ease-in;
+
+  /* & = outer selector */
+  &:hover {
+    background: #1a202c;
+    color: #ffffff;
+  }
+}
+
+.unordered-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  color:blue;
+}
